@@ -190,6 +190,32 @@
     transform: translateX(-100%);
   }
 }
+.welcome-bar {
+  background: #8b0000;
+  color: #fff;
+  padding: 10px 0;
+  overflow: hidden;
+  position: relative;
+}
+
+.scroll-text {
+  display: inline-block;
+  white-space: nowrap;
+  animation: moveLeft 10s linear infinite; /* سرعة الحركة هنا تم تقليصها إلى 10 ثوانٍ */
+}
+
+.scroll-text:hover {
+  animation-play-state: paused; /* يتوقف عند التمرير */
+}
+
+@keyframes moveLeft {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
 
 .welcome-btn {
   background-color: #ff3333;
@@ -204,7 +230,8 @@
 }
 
 .welcome-btn:hover {
-  background-color: #c
+  background-color: #c00000;
+}
   </style>
 </head>
 <body>
