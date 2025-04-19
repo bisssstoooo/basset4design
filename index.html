@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>basset4design</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap');
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Cairo', sans-serif;
+      background-color: #111;
+      color: #fff;
+      line-height: 1.6;
+    }
+
+    header {
+      background: linear-gradient(90deg, #c00000, #8b0000);
+      padding: 30px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2.5em;
+      animation: fadeIn 1.5s ease-in-out;
+    }
+
+    nav {
+      background-color: #000;
+      display: flex;
+      justify-content: center;
+      padding: 15px;
+      gap: 30px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-size: 1.1em;
+      position: relative;
+    }
+
+    nav a::after {
+      content: '';
+      position: absolute;
+      bottom: -5px;
+      right: 0;
+      width: 0%;
+      height: 2px;
+      background-color: red;
+      transition: 0.3s;
+    }
+
+    nav a:hover::after {
+      width: 100%;
+      left: 0;
+    }
+
+    .services, .portfolio {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 25px;
+      padding: 50px 20px;
+    }
+
+    .service-card, .project-card {
+      background-color: #1e1e1e;
+      border: 1px solid #c00000;
+      padding: 25px;
+      border-radius: 15px;
+      text-align: center;
+      transition: transform 0.4s ease;
+    }
+
+    .service-card:hover, .project-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 0 15px red;
+    }
+
+    .service-card h3, .project-card h3 {
+      color: #ff4d4d;
+      margin-bottom: 15px;
+    }
+
+    .service-card img, .project-card img {
+      width: 100%;
+      border-radius: 10px;
+      margin-bottom: 15px;
+    }
+
+    .contact {
+      background-color: #181818;
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    .contact h2 {
+      margin-bottom: 20px;
+      color: #ff3333;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      max-width: 500px;
+      margin: auto;
+    }
+
+    input, textarea {
+      padding: 12px;
+      border: none;
+      border-radius: 8px;
+      background-color: #2c2c2c;
+      color: white;
+    }
+
+    input:focus, textarea:focus {
+      outline: 2px solid #c00000;
+    }
+
+    button {
+      background-color: #c00000;
+      color: white;
+      padding: 12px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    button:hover {
+      background-color: #ff0000;
+    }
+
+    footer {
+      background-color: #c00000;
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9em;
+    }
+
+    @keyframes fadeIn {
+      0% { opacity: 0; transform: translateY(-20px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>مرحباً بك في basset4design</h1>
+  </header>
+  <nav>
+    <a href="#services">الخدمات</a>
+    <a href="#portfolio">أعمالي</a>
+    <a href="#contact">اتصل بنا</a>
+    <a href="accounts.html">حساباتي</a> <!-- رابط إلى صفحة الحسابات -->
+  </nav>
+
+  <section class="services" id="services">
+    <div class="service-card">
+      <img src="https://icon-library.com/images/brand-icon-png/brand-icon-png-19.jpg" alt="تصميم شعارات">
+      <h3>تصميم الشعارات</h3>
+      <p>شعارات إبداعية وفريدة لتمييز علامتك التجارية.</p>
+    </div>
+    <div class="service-card">
+      <img src="https://cdn-icons-png.flaticon.com/512/648/648418.png" alt="تصميم جرافيك">
+      <h3>تصميم جرافيك</h3>
+      <p>بوسترات، بطاقات عمل، منشورات سوشيال ميديا والمزيد.</p>
+    </div>
+    <div class="service-card">
+      <img src="https://static.vecteezy.com/system/resources/previews/015/340/589/original/video-editor-3d-character-illustration-png.png" alt="مونتاج الفيديو">
+      <h3>مونتاج الفيديو</h3>
+      <p>مونتاج احترافي لفيديوهاتك التسويقية أو التعليمية.</p>
+    </div>
+  </section>
+
+  <section class="portfolio" id="portfolio">
+    <div class="project-card">
+      <img src="https://www.shutterstock.com/image-vector/network-logo-template-this-can-260nw-1538332079.jpg" alt="شعار لشركة تقنية">
+      <h3>شعار لشركة تقنية</h3>
+      <p>تصميم شعار مبتكر لشركة ناشئة في مجال التقنية.</p>
+    </div>
+    <div class="project-card">
+      <img src="https://mostaql.hsoubcdn.com/uploads/thumbnails/2629209/64ae19116d09c/Picsart23-07-1202-45-17-381.jpg" alt="بوستر تسويقي">
+      <h3>بوستر تسويقي</h3>
+      <p>تصميم بوستر إعلاني لحملة على وسائل التواصل.</p>
+    </div>
+    <div class="project-card">
+      <img src="https://tse4.mm.bing.net/th/id/OIP.VLLVEMEYYLf72nUrPueeagHaDt?rs=1&pid=ImgDetMain" alt="فيديو تقديمي">
+      <h3>فيديو تقديمي</h3>
+      <p>مونتاج فيديو احترافي لعرض خدمات شركة.</p>
+    </div>
+  </section>
+
+  <section class="payment">
+    <h2>طرق الدفع المتوفرة</h2>
+    <div class="payment-methods">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/b/b5/PayPal.svg" alt="PayPal">
+      <img src="https://tse1.mm.bing.net/th/id/OIP.hX2K_c2RzpEmpuEvhQ-DrwHaHa?rs=1&pid=ImgDetMain" alt="Redot Pay" style="width: 40px; height: auto;">
+
+    </div>
+  </section>
+  
+  <section class="extras">
+    <h2>مزايا إضافية</h2>
+    <ul="circle">
+      <li>تسليم سريع لا يتعدى 5 ايام </li>
+      <li>تعديلات غير محدودة حتى رضاك التام</li>
+      <li>دعم فني متواصل على مدار الساعة</li>
+      <li>ملفات جاهزة للطباعة والنشر</li>
+    </ul>
+  </section>
+  
+  <section class="khamasat">
+    <h2>زوروا موقعي على خمسات</h2>
+    <a href="https://khamsat.com/user/abdelbassetboulaouma" target="_blank">عرض خدماتي على خمسات</a>
+  </section>
+
+  
+  <section class="contact" id="contact">
+    <h2>تواصل معنا</h2>
+    <form action="https://formsubmit.co/mebasset43@gmail.com" method="POST">
+      <input type="text" name="name" placeholder="الاسم" required>
+      <input type="email" name="email" placeholder="البريد الإلكتروني" required>
+      <textarea name="message" rows="4" placeholder="رسالتك" required></textarea>
+      <button type="submit">إرسال</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>© 2025 جميع الحقوق محفوظة - mebasset43@gmail.com</p>
+  </footer>
+</body>
+</html>
