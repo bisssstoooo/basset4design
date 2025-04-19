@@ -164,27 +164,56 @@
       0% { opacity: 0; transform: translateY(-20px); }
       100% { opacity: 1; transform: translateY(0); }
     }
-   .welcome-btn {
+  .welcome-bar {
+  background: #8b0000;
+  color: #fff;
+  padding: 10px 0;
+  overflow: hidden;
+  position: relative;
+}
+
+.scroll-text {
+  display: inline-block;
+  white-space: nowrap;
+  animation: moveLeft 15s linear infinite;
+}
+
+.scroll-text:hover {
+  animation-play-state: paused; /* يتوقف عند التمرير */
+}
+
+@keyframes moveLeft {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.welcome-btn {
   background-color: #ff3333;
   color: white;
-  padding: 6px 12px;
-  margin-right: 10px;
-  border-radius: 5px;
+  padding: 6px 20px;
+  border-radius: 50px;
   text-decoration: none;
   font-weight: bold;
   transition: background 0.3s;
+  font-size: 0.95em;
+  margin-right: 10px;
 }
 
 .welcome-btn:hover {
-  background-color: #c00000;
-}
+  background-color: #c
   </style>
 </head>
 <body>
  <div class="welcome-bar">
+   <div class="scroll-text">
   👋 مرحباً بك في الموقع | 
   <a href="#contact" class="welcome-btn">اطلب الآن وابدأ التميز</a>
 </div>
+   </div>
   <header style="position: relative; background: linear-gradient(90deg, #c00000, #8b0000); padding: 30px 20px; text-align: center;">
     <img src="https://i.postimg.cc/bwvFdNS9/channels4-profile-1.jpg" alt="Logo" style="position: absolute; top: 10px; right: 20px; width: 30px; height: auto;">
     <h1>مرحباً بك في basset4design</h1>
