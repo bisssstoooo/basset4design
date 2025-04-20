@@ -12,32 +12,47 @@
       margin: 0;
       padding: 0;
     }
+
     header {
-      background: linear-gradient(90deg, #c00000, #8b0000);
+      background: linear-gradient(90deg, #006400, #228B22); /* أخضر */
       padding: 30px 20px;
       text-align: center;
     }
+
     header h1 {
       font-size: 2em;
     }
+
     .gallery {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
       gap: 20px;
       padding: 40px 20px;
     }
+
     .gallery img {
       width: 100%;
       border-radius: 10px;
-      border: 2px solid #c00000;
+      border: 2px solid #33cc33;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
+
+    .gallery img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 15px #33cc33;
+    }
+
     a.back {
       display: block;
       text-align: center;
       margin: 20px;
-      color: #ff4d4d;
+      color: #66ff66;
       text-decoration: none;
       font-weight: bold;
+    }
+
+    a.back:hover {
+      text-decoration: underline;
     }
   </style>
 </head>
@@ -48,14 +63,10 @@
 
   <div class="gallery">
     <img src="https://i.postimg.cc/tCXYZ7df/Capture-d-cran-2024-12-29-140154.png" alt="شعار 1">
-    <img src="https://i.postimg.cc/XvhC93N5/BABIL-BANER-INVITE.png
-" alt="شعار 2">
-    <img src="https://i.postimg.cc/qqH6ZL3M/banner.png
-" alt="شعار 3">
-    <img src="https://i.postimg.cc/C1qfNtdQ/GOMGOMA-BANNER.png
-" alt="شعار 4">
-    <img src="https://i.postimg.cc/3wyy86jx/RS.png
-" alt="شعار 5">
+    <img src="https://i.postimg.cc/XvhC93N5/BABIL-BANER-INVITE.png" alt="شعار 2">
+    <img src="https://i.postimg.cc/qqH6ZL3M/banner.png" alt="شعار 3">
+    <img src="https://i.postimg.cc/C1qfNtdQ/GOMGOMA-BANNER.png" alt="شعار 4">
+    <img src="https://i.postimg.cc/3wyy86jx/RS.png" alt="شعار 5">
     <img src="https://i.postimg.cc/25B6RWmq/a9bde834737a6daf2b46741232cf6a7b.jpg" alt="شعار 6">
   </div>
 
