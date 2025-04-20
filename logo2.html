@@ -12,32 +12,47 @@
       margin: 0;
       padding: 0;
     }
+
     header {
-      background: linear-gradient(90deg, #c00000, #8b0000);
+      background: linear-gradient(90deg, #006400, #228B22); /* أخضر */
       padding: 30px 20px;
       text-align: center;
     }
+
     header h1 {
       font-size: 2em;
     }
+
     .gallery {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
       gap: 20px;
       padding: 40px 20px;
     }
+
     .gallery img {
       width: 100%;
       border-radius: 10px;
-      border: 2px solid #c00000;
+      border: 2px solid #33cc33;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
+
+    .gallery img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 15px #33cc33;
+    }
+
     a.back {
       display: block;
       text-align: center;
       margin: 20px;
-      color: #ff4d4d;
+      color: #66ff66;
       text-decoration: none;
       font-weight: bold;
+    }
+
+    a.back:hover {
+      text-decoration: underline;
     }
   </style>
 </head>
@@ -47,13 +62,10 @@
   </header>
 
   <div class="gallery">
-    <img src="https://i.postimg.cc/2Sxpq8wH/Untitled-1.png" alt="شعار 1">
-    <img src="https://i.postimg.cc/Kvdwp39p/Capture-d-cran-2024-12-31-205508.png
-" alt="شعار 2">
-    <img src="https://i.postimg.cc/0QBc6hFX/Rare-Thambnail-pack-By-Mostafa1-01.png
-" alt="شعار 3">
-    <img src="https://i.postimg.cc/m2CWsSFW/Rare-Thambnail.png
-" alt="شعار 4">
+    <img src="https://i.postimg.cc/2Sxpq8wH/Untitled-1.png" alt="وسائل 1">
+    <img src="https://i.postimg.cc/Kvdwp39p/Capture-d-cran-2024-12-31-205508.png" alt="وسائل 2">
+    <img src="https://i.postimg.cc/0QBc6hFX/Rare-Thambnail-pack-By-Mostafa1-01.png" alt="وسائل 3">
+    <img src="https://i.postimg.cc/m2CWsSFW/Rare-Thambnail.png" alt="وسائل 4">
   </div>
 
   <a href="index.html" class="back">← الرجوع إلى الصفحة الرئيسية</a>
